@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <div class="top-section">
+    <div class="logo text-center">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo">
+    </div>
+
+    <a href="/dashboard"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a>
+
+    <div class="section-header" onclick="toggleSubmenu('time-menu')">
+      <i class="fas fa-clock me-2"></i> Time Converters
+    </div>
+    <div id="time-menu" class="submenu">
+      <a href="/date-to-epoch">Date to EPOCH</a>
+      <a href="/epoch-to-date">EPOCH to Date</a>
+    </div>
+
+    <div class="section-header" onclick="toggleSubmenu('flist-menu')">
+      <i class="fas fa-code me-2"></i> Flist Converters
+    </div>
+    <div id="flist-menu" class="submenu">
+      <a href="#">Flist 2 C Code</a>
+      <a href="#">Flist 2 XML</a>
+      <a href="#">Flist 2 JSON</a>
+    </div>
+
+    <div class="section-header" onclick="toggleSubmenu('other-menu')">
+      <i class="fas fa-tools me-2"></i> Other Tools
+    </div>
+    <div id="other-menu" class="submenu">
+      <a href="/reports">Reports</a>
+    </div>
+  </div>
+
+  <div class="user-section">
+    <div class="d-flex align-items-center gap-2">
+      <img src="{{ url_for('static', filename='user-avatar.png') }}" alt="User Avatar">
+      <span>{{ username }}</span>
+    </div>
+    <a href="/logout" title="Logout">
+      <i class="fas fa-sign-out-alt logout-icon"></i>
+    </a>
+  </div>
+</div>

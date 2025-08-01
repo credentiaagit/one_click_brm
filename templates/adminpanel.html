@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Admin Panel - Manage User Passwords</h2>
+
+    {% if message %}
+        <div class="alert alert-success text-center">{{ message }}</div>
+    {% endif %}
+    {% if error %}
+        <div class="alert alert-danger text-center">{{ error }}</div>
+    {% endif %}
+
+    <div class="card shadow p-4">
+        <h4 class="mb-3">Registered Users</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>New Password</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <form method="POST">
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.role }}</td>
+                        <td>
+                            <input type="hidden" name="username" value="{{ user.username }}">
+                            <input type="password" name="new_password" class="form-control" required>
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-primary btn-sm">Update</button>
+                        </td>
+                    </form>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/dashboard" class="btn btn-secondary">Back to Dashboard</a>
+    </div>
+</div>
+
+{% endblock %}

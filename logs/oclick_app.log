@@ -1,0 +1,22 @@
+[2025-08-01 09:47:42,076] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 09:48:31,379] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 09:48:35,648] [INFO] [appLogger] a logged in successfully.
+[2025-08-01 09:48:37,857] [INFO] [appLogger] None logged out successfully
+[2025-08-01 09:49:10,860] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 09:49:16,948] [INFO] [appLogger] a logged in successfully.
+[2025-08-01 09:49:24,044] [INFO] [appLogger] a logged out successfully
+[2025-08-01 09:50:10,162] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 09:50:13,792] [INFO] [appLogger] a logged in successfully.
+[2025-08-01 09:57:15,449] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 09:57:20,767] [INFO] [appLogger] a logged in successfully.
+[2025-08-01 09:57:37,471] [INFO] [appLogger] b logged in successfully.
+[2025-08-01 10:02:06,021] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 10:02:17,983] [INFO] [appLogger] a logged out successfully
+[2025-08-01 10:02:36,083] [INFO] [appLogger] a logged in successfully.
+[2025-08-01 10:03:02,837] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 10:03:15,134] [INFO] [appLogger] a logged out successfully
+[2025-08-01 10:03:33,453] [INFO] [appLogger] None logged out successfully
+[2025-08-01 10:04:00,642] [INFO] [appLogger] MongoDB connected successfully
+[2025-08-01 10:04:13,102] [INFO] [funcLogger] get_current_time | Input: None | Output: 2025-08-01 10:04:13
+[2025-08-01 10:04:16,557] [INFO] [appLogger] b logged out successfully
+[2025-08-01 10:04:27,706] [INFO] [funcLogger] get_current_time | Input: None | Output: 2025-08-01 10:04:27
